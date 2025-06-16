@@ -10,10 +10,12 @@ const projects = [
   {
     name: "IPhone 15 Website Clone",
     image: image2,
+    url: "https://gianfranco725.github.io/iphone15-clone/",
   },
   {
     name: "Auth Task Manager MERN Stack",
     image: image1,
+    url: "https://github.com/Gianfranco725/task-manager-mern-stack",
   },
 ];
 
@@ -32,9 +34,9 @@ const Projects: FC = () => {
           Selected Works
         </h2>
         <div className="mt-10 md:mt-16 lg:mt-20">
-          {projects.map(({ name, image }) => (
+          {projects.map(({ name, image, url }) => (
             <a
-              href="#"
+              href={url}
               key={name}
               className="flex flex-col md:py-8 lg:py-10 last:border-b border-t border-stone-400 border-dotted py-6 relative group/project"
             >

@@ -56,7 +56,7 @@ const Footer: FC = () => {
           <div className="grid md:grid-cols-3 md:items-center">
             <div className="md:col-span-2">
               <h2
-                className="text-4xl md:text-7xl lg:text-8xl mt-8 font-extralight"
+                className="text-4xl md:text-7xl lg:text-8xl mt-8 font-medium md:font-extralight"
                 ref={scope}
               >
                 Enough talk. Let&apos;s make something great together
