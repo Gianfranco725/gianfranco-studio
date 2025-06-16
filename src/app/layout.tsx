@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
 const inter = Inter({
@@ -6,9 +5,14 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Gianfranco Portfolio",
   description: "Let's create something together",
+  openGraph: {
+    title: "Gianfranco Portfolio",
+    description: "Let's create something together",
+    locale: "en_US",
+  },
 };
 
 export default function RootLayout({
